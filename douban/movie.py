@@ -34,7 +34,14 @@ def subjectIDCollect(url):
 
 def getFields():
     html = "http://movie.douban.com/subject/20513059/";
-    p1 = re.compile(r'(?<=dBy">)[^dBy">].*[^</a>](?=</a>)') #匹配导演
+    p1 = re.compile(r'(?<=dBy">)[^dBy">].?[^</a>](?=</a>)') #匹配导演
+    p2 = re.compile(r'(?<=starring">)[^strring">].?[^\</a>](?=\</a>)') #匹配主演
+    p3 = re.compile(r'(?<=c.*/\d{4,}/">)[^c.*/\d{4,}/].?[^\</a>](?=\</a>)') #匹配编剧
+    p4 = re.compile(r'') #匹配年份
+    p5 = re.compile(r'') #匹配国家
+    p6 = re.compile(r'') #匹配评分
+    p7 = re.compile(r'') #匹配电影名字
+    p8 = re.compile(r'') #匹配类型
     directer = re.match(p1,html)
     print directer
     
