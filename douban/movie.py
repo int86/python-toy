@@ -42,7 +42,7 @@ def getFields():
     html = "http://movie.douban.com/subject/20513059/";
     p1 = re.compile(r'(?<=dBy">)[^dBy">].?[^</a>](?=</a>)') #匹配导演
     p2 = re.compile(r'(?<=starring">)[^strring">].?[^\</a>](?=\</a>)') #匹配主演
-    p3 = re.compile(r'(?<=c.*/\d{4,}/">)[^c.*/\d{4,}/].?[^\</a>](?=\</a>)') #匹配编剧    (要改~~~)
+    p3 = re.compile(r'(?<=c.*/\d{4,}/">)[^c.*/\d{4,}/].?[^\</a>](?=\</a>)') #匹配编剧    (要改~~~~)
     p4 = re.compile(r'(?<=init.*e\"\s\w+t=\")\d{4}\-\d{1,}\-\d{1,}') #匹配年份          （要改~~~）
     p5 = re.compile(r'(?<=制片国家/地区:</span>)[^制片国家/地区:</span>].*[^<br\/>](?=<br\/>)') #匹配国家或地区
     p6 = re.compile(r'(?<=a\w+">)[^a.*e">].*[^<\/W>](?=<\/strong>)') #匹配评分    （要改~~~）
