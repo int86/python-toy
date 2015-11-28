@@ -39,6 +39,7 @@ def subjectIDCollect(url):
 #分析提取字段的方法
 
 def getFields():
+<<<<<<< HEAD
     url = "http://movie.douban.com/subject/1329562/";
     html = urllib.urlopen(url).read()
 
@@ -54,7 +55,6 @@ def getFields():
     directer = re.match(p1,html);
     print directer
     
-
 getFields()
 
 
