@@ -39,7 +39,6 @@ def subjectIDCollect(url):
 #分析提取字段的方法
 
 def getFields():
-<<<<<<< HEAD
     url = "http://movie.douban.com/subject/1329562/";
     html = urllib.urlopen(url).read()
 
@@ -50,7 +49,7 @@ def getFields():
     # p4 = re.compile(r'(?<=content=")[12][0-9]{3}-[0-9]{2}-[0-9]{2}') #匹配年份  ok
     # p5 = re.compile(r'(?<=制片国家/地区:</span>).*(?=<br\/>)') #匹配国家或地区 ok
     # p6 = re.compile(r'(?<=average">).*?(?=</strong>)') #匹配评分 ok
-    # p7 = re.compile(r'(?<=<title>\s).*(?=\s</title>)') #匹配电影名字
+    # p7 = re.compile(r'(?<=<title>\s).*(?=\s</title>)') #匹配电影名字 ok
     # p8 = re.compile(r'(?<=genre">).*?(?=</span>)') #匹配类型  ok
     directer = re.match(p1,html);
     print directer
