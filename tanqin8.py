@@ -3,7 +3,7 @@ import urllib
 import requests  
 import time
 """
-突破弹琴吧vip下载限制下载吉他谱
+突破弹琴吧vip限制下载吉他谱
 """
 #吉他谱地址
 url = "http://www.tan8.com/jitapu-55725.html"
