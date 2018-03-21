@@ -1,5 +1,11 @@
 # encoding: UTF-8
 import pexpect
+
+"""
+构建一个ssh网络
+依赖库：pexpect
+"""
+
 PROMPT = ['#','>>>', '>','\$']
 def send_command(child, cmd):
     child.sendline(cmd)
